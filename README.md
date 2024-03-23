@@ -27,6 +27,7 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
     npx tailwindcss init -p
     pnpm dlx shadcn-ui@latest init
     pnpm dlx shadcn-ui@latest add button
+    pnpm install react-router-dom localforage match-sorter sort-by
 
 # bibliotecas para serem instaladas no Visual code
     - PostCSS Language Support

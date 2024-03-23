@@ -15,6 +15,11 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
 # devDependencies
     pnpm add -D tailwindcss postcss autoprefixer
     pnpm i -D @types/node
+    pnpm i eslint @rocketseat/eslint-config -D
+    pnpm install -D tailwindcss postcss autoprefixer concurrently
+    pnpm install -D prettier prettier-plugin-tailwindcss
+    pnpm install -D prettier-plugin-tailwindcss
+    pnpm i -D eslint-plugin-simple-import-sort
     
 
 
@@ -23,7 +28,9 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
     pnpm dlx shadcn-ui@latest init
     pnpm dlx shadcn-ui@latest add button
 
-
+# bibliotecas para serem instaladas no Visual code
+    - PostCSS Language Support
+    - Tailwind CSS IntelliSense
 
 # https://ui.shadcn.com/ setting
 ✔ Would you like to use TypeScript (recommended)? … no / yes

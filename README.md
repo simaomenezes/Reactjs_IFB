@@ -31,6 +31,7 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
         - pnpm dlx shadcn-ui@latest add input label
     pnpm install react-router-dom localforage match-sorter sort-by
     pnpm i react-helmet-async
+    pnpm i react-hook-form zod @hookform/resolvers
 
 # bibliotecas para serem instaladas no Visual code
     - PostCSS Language Support

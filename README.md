@@ -32,6 +32,7 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
     pnpm install react-router-dom localforage match-sorter sort-by
     pnpm i react-helmet-async
     pnpm i react-hook-form zod @hookform/resolvers
+    pnpm install sonner
 
 # bibliotecas para serem instaladas no Visual code
     - PostCSS Language Support

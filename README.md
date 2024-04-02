@@ -34,6 +34,7 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
         - pnpm i react-hook-form zod @hookform/resolvers
         - pnpm install sonner
         - pnpm dlx shadcn-ui@latest add separator
+        - pnpm dlx shadcn-ui@latest add dropdown-menu
 
 # bibliotecas para serem instaladas no Visual code
     - PostCSS Language Support

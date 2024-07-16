@@ -38,6 +38,7 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
         - pnpm dlx shadcn-ui@latest add table
         - pnpm dlx shadcn-ui@latest add select
         - pnpm dlx shadcn-ui@latest add dialog
+        - pnpm dlx shadcn-ui@latest add card
 
 # bibliotecas para serem instaladas no Visual code
     - PostCSS Language Support

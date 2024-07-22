@@ -40,6 +40,7 @@ React Router DOM, React Hook Form, shadcn/ui, React Query, Vitest e mais!
         - pnpm dlx shadcn-ui@latest add dialog
         - pnpm dlx shadcn-ui@latest add card
         - pnpm dlx shadcn-ui@latest add chart
+        - pnpm dlx shadcn-ui@latest add skeleton
         - pnpm i axios
         - pnpm i zod
         - pnpm i @tanstack/react-query

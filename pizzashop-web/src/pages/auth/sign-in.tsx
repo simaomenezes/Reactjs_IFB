@@ -15,7 +15,7 @@ const sigInForm = z.object({
 
 type SigInForm = z.infer<typeof sigInForm>
 
-export function SingIn() {
+export function SignIn() {
     const [searchParams] = useSearchParams()
 
     const { 
@@ -39,7 +39,7 @@ export function SingIn() {
     }
     return (
         <>
-        <Helmet title='SingIn'/>
+        <Helmet title='SignIn'/>
         <div className='p-8'>
             <Button variant={'ghost'} asChild className='absolute right-8 top-8'>
                 <Link to="/sing-up" className=''>

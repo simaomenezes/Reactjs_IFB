@@ -4,7 +4,7 @@ import { Select } from "@/components/ui/select";
 import { SelectContent, SelectItem, SelectTrigger, SelectValue } from "@radix-ui/react-select";
 import { Search } from "lucide-react";
 
-export function OrderTableFilter(){
+export function OrderTableFilters(){
     return (
         <>
             <form className="flex items-center gap-2">

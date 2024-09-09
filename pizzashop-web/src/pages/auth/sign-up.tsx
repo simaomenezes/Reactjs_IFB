@@ -18,7 +18,7 @@ const sigUpForm = z.object({
 
 type SigUpForm = z.infer<typeof sigUpForm>
 
-export function SingUp() {
+export function SignUp() {
     const navigate = useNavigate()
 
     const { 

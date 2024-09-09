@@ -10,5 +10,7 @@ export async function getMonthOrdersAmount() {
     '/metrics/month-orders-amount',
   )
 
+  console.log(response.data)
+
   return response.data
 }

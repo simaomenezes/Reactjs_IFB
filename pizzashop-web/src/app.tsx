@@ -1,40 +1,26 @@
-import { isAxiosError } from 'axios'
-import { useEffect } from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
+import './global.css'
 
-import { Header } from '@/components/header'
-import { api } from '@/lib/axios'
+import { QueryClientProvider } from '@tanstack/react-query'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+import { RouterProvider } from 'react-router-dom'
+import { Toaster } from 'sonner'
 
-export function AppLayout() {
-  const navigate = useNavigate()
+import { ThemeProvider } from './components/theme/theme-provider'
+import { queryClient } from './lib/react-query'
+import { router } from './routes'
 
-  useEffect(() => {
-    const interceptorId = api.interceptors.response.use(
-      (response) => response,
-      (error) => {
-        if (isAxiosError(error)) {
-          const status = error.response?.status
-          const code = error.response?.data.code
-
-          if (status === 401 && code === 'UNAUTHORIZED') {
-            navigate('/sign-in', { replace: true })
-          }
-        }
-      },
-    )
-
-    return () => {
-      api.interceptors.response.eject(interceptorId)
-    }
-  }, [navigate])
-
+export function App() {
   return (
-    <div className="flex min-h-screen flex-col antialiased">
-      <Header />
+    <HelmetProvider>
+      <ThemeProvider defaultTheme="dark" storageKey="pizzashop-theme">
+        <Helmet titleTemplate="%s | pizza.shop" />
 
-      <div className="flex flex-1 flex-col gap-4 p-8 pt-6">
-        <Outlet />
-      </div>
-    </div>
+        <Toaster richColors />
+
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
+      </ThemeProvider>
+    </HelmetProvider>
   )
 }
